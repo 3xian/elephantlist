@@ -10,7 +10,3 @@ Installing
 ==========
 
     $ go get github.com/3xian/elephantlist
-
-or with full benchmark code
-
-    $ go get -u -v github.com/3xian/elephantlist
