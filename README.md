@@ -6,7 +6,6 @@ It's a mixture of [skip list](http://en.wikipedia.org/wiki/Skip_list) and [unrol
 and runs faster than both of them.
 
 
-Installing
-==========
+### Installation
 
     $ go get github.com/3xian/elephantlist
