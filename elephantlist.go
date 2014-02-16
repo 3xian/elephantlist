@@ -5,9 +5,9 @@ import (
 )
 
 const (
-	growRate       = 0.25
+	growRate       = 0.2
 	maxLevel       = 24
-	maxNodeKeySize = 16
+	maxNodeKeySize = 32
 )
 
 type ElephantList struct {
@@ -42,7 +42,7 @@ func (e *ElephantList) Get(key interface{}) (value interface{}, ok bool) {
 func (e *ElephantList) Set(key, value interface{}) {
 	nd := e.selectNode(key)
 	e.set(nd, key, value)
-	if len(nd.keys) > maxNodeKeySize {
+	if len(nd.keys) >= maxNodeKeySize {
 		e.split(nd)
 	}
 }
