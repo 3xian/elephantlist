@@ -93,6 +93,8 @@ func Random() {
 }
 
 func main() {
+	flag.Parse()
+
 	Sequential()
 	Random()
 }
